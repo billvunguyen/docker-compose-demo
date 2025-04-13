@@ -3,7 +3,7 @@
 # ############################################################
 
 # Stage 1: Build Angular application
-FROM node:14 as build-stage
+FROM node:22 as build-stage
 
 ARG WORK_DIR=/frontend-angular
 ENV PATH ${WORK_DIR}/node_modules/.bin:$PATH
